@@ -40,8 +40,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/airscholar/e2e-data-engineering.git
-cd e2e-data-engineering
+git clone https://github.com/DKLOCHANA/real-time-data-streaming-project
 Start all services:
 
 bash
