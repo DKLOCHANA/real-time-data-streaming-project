@@ -82,4 +82,28 @@ docker-compose up
 ## 📊 Data Flow Overview
 
 1. **RandomUser API** generates new user records.
-2. **Airflow DAG** collects and loads raw data into P
+2. **Airflow DAG** collects and loads raw data into PostgreSQL.
+3. **Kafka + Zookeeper** streams data to Spark in real-time.
+4. **Spark Streaming** processes and transforms the data.
+5. **Cassandra** stores the final, processed data for analysis.
+
+---
+
+## 📂 Repository Contents
+
+```
+/dags          # Airflow DAGs for ETL orchestration
+/scripts       # Python scripts for ingestion and processing
+/docker        # Dockerfiles and compose configuration
+/config        # Configuration files for Spark, Kafka, Cassandra
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. Free to use for **educational and research purposes**.
+
+---
+
+### ✨ Developed with ❤️ for learning and showcasing modern data engineering practices
